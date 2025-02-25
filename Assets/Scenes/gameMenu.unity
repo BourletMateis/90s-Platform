@@ -291,8 +291,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.351929, y: 6.4541016}
-  m_SizeDelta: {x: 1057.7039, y: 598.9082}
+  m_AnchoredPosition: {x: 1.1019, y: 2.4541016}
+  m_SizeDelta: {x: 1072.2, y: 606.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &453110171
 Animator:
@@ -365,6 +365,7 @@ GameObject:
   - component: {fileID: 822983526}
   - component: {fileID: 822983525}
   - component: {fileID: 822983524}
+  - component: {fileID: 822983528}
   m_Layer: 5
   m_Name: gameMenu
   m_TagString: Untagged
@@ -459,6 +460,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &822983528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822983523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef37e73c9c81df4ca3365467db45e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &872206898
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,7 +690,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 904457795}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 822983528}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: SettingScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &904457795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -798,7 +823,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1161948893}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 822983528}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: PlayScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1161948893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -919,7 +956,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1379852639}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 822983528}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1379852639
 MonoBehaviour:
   m_ObjectHideFlags: 0
