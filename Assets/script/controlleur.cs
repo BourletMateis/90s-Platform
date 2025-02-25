@@ -97,6 +97,8 @@ public class NewBehaviourScript : MonoBehaviour
         float characterVelocity = Mathf.Abs(rb.velocity.x);
         Debug.Log(characterVelocity);
         animator.SetFloat("Speed", characterVelocity);
+
+
     }
 
 
