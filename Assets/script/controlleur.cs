@@ -98,6 +98,7 @@ public class NewBehaviourScript : MonoBehaviour
         animator.SetFloat("Speed", characterVelocity);
     }
 
+
     private void CheckGroundStatus()
     {
         Collider2D collider = GetComponent<Collider2D>();
