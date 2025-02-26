@@ -7,7 +7,7 @@ public class MainMenuController : MonoBehaviour
 {
     public void PlayScene(string sceneName)
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("homePlayer");
     }
 
     public void SettingScene(string sceneName)
@@ -18,6 +18,11 @@ public class MainMenuController : MonoBehaviour
     public void returnhome(string sceneName)
     {
         SceneManager.LoadScene("gameMenu");
+    }
+
+    public void playgame(string sceneName)
+    {
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void QuitGame()
