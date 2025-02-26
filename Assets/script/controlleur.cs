@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 namespace controlleur 
@@ -9,8 +10,9 @@ namespace controlleur
         public Rigidbody2D rb;
         public float speed = 7f;
         public float jumpForce = 8f;
+        [SerializeField]
         private bool isGrounded;
-        public float groundCheckDistance = 0.2f;
+        public float groundCheckDistance = 0.5f;
         public Animator animator;
         public SpriteRenderer SpriteRenderer;
 
@@ -102,20 +104,21 @@ namespace controlleur
 
         private void CheckGroundStatus()
         {
-            Collider2D collider = GetComponent<Collider2D>();
-            Vector2 raycastOrigin = (Vector2)transform.position - new Vector2(0, collider.bounds.extents.y);
+            CapsuleCollider2D capsuleCollider = GetComponent<CapsuleCollider2D>();
+            Vector2 raycastOriginCenter = (Vector2)transform.position;
+            Vector2 raycastOriginLeft = raycastOriginCenter - new Vector2(capsuleCollider.size.x / 2, 0);
+            Vector2 raycastOriginRight = raycastOriginCenter + new Vector2(capsuleCollider.size.x / 2, 0);
 
-            RaycastHit2D hit = Physics2D.Raycast(raycastOrigin, Vector2.down, groundCheckDistance);
+            float adjustedDistance = groundCheckDistance + groundCheckDistance; 
+            LayerMask groundLayer = LayerMask.GetMask("Ground"); 
 
-            if (hit.collider != null && hit.collider.CompareTag("Ground"))
-            {
-                isGrounded = true;
-            }
-            else
-            {
-                isGrounded = false;
-            }
+            bool hitCenter = Physics2D.Raycast(raycastOriginCenter, Vector2.down, adjustedDistance, groundLayer);
+            bool hitLeft = Physics2D.Raycast(raycastOriginLeft, Vector2.down, adjustedDistance, groundLayer);
+            bool hitRight = Physics2D.Raycast(raycastOriginRight, Vector2.down, adjustedDistance, groundLayer);
+
+            isGrounded = hitCenter || hitLeft || hitRight;
         }
+
 
         private IEnumerator Dash()
         {
