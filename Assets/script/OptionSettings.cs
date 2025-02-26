@@ -48,9 +48,6 @@ public class OptionSettings : MonoBehaviour
     public void OnChangeSlider(float Value)
     {
         ValueText.SetText($"{Value.ToString("N4")}");
-
-        //Mixer.SetFloat("Volume", Mathf.Log10(Value) * 20);
-
         Mixer.SetFloat("Volume", (-80 + Value * 100));
 
     }
