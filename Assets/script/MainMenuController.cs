@@ -7,7 +7,7 @@ public class MainMenuController : MonoBehaviour
 {
     public void PlayScene(string sceneName)
     {
-        SceneManager.LoadScene("homePlayer");
+        SceneManager.LoadScene("projet_1_semaine");
     }
 
     public void SettingScene(string sceneName)
