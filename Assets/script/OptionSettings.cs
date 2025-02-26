@@ -1,22 +1,52 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using System.Collections;
+using System.Collections.Generic;
 
 public class OptionSettings : MonoBehaviour
 {
-    Resolution[] resolution;
-    public Dropdown resolutiondrop; // <-- Vérifie que c'est bien un Dropdown
+
+    public TMP_Dropdown ResDropDown;
+    public Toggle FullScreenToggle;
+
+    Resolution[] AllResolutions;
+    bool IsFullScreen;
+    int SelectdResolution;
+    List<Resolution> SelectedResolutionList = new List<Resolution>();
 
     public void Start()
     {
-        resolution = Screen.resolutions;
+        IsFullScreen = true;
+        AllResolutions = Screen.resolutions;
 
-        if (resolutiondrop == null)
+
+        List<string> resolutionStringList = new List<string>();
+        string newRes;
+        foreach (Resolution res in AllResolutions)
         {
-            Debug.LogError("Le Dropdown de résolution n'est pas assigné dans l'inspecteur !");
-            return;
+            newRes = res.width.ToString() + " x " + res.height.ToString();
+            if (!resolutionStringList.Contains(newRes))
+            {
+                resolutionStringList.Add(res.ToString());
+                SelectedResolutionList.Add(res);
+            }
         }
 
-        resolutiondrop.ClearOptions();
+        ResDropDown.AddOptions(resolutionStringList);
+    }
+
+    public void ChangeResolution()
+    {
+        SelectdResolution = ResDropDown.value;
+        Screen.SetResolution(SelectedResolutionList[SelectdResolution].width, SelectedResolutionList[SelectdResolution].height, IsFullScreen);
+    }
+
+    public void ChangeFullScreen()
+    {
+        IsFullScreen = FullScreenToggle.isOn;
+        Screen.SetResolution(SelectedResolutionList[SelectdResolution].width, SelectedResolutionList[SelectdResolution].height, IsFullScreen);
+
     }
 }
 
