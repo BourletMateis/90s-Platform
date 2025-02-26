@@ -115,3 +115,4 @@ src/main/resources/templates.list
 src/main/resources/gitignore/*
 src/main/resources/toptal/*
 .idea
+.DS_Store
