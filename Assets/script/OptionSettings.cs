@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Audio;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -9,11 +10,19 @@ public class OptionSettings : MonoBehaviour
 
     public TMP_Dropdown ResDropDown;
     public Toggle FullScreenToggle;
+    public AudioMixer audioMixer;
 
     Resolution[] AllResolutions;
     bool IsFullScreen;
     int SelectdResolution;
     List<Resolution> SelectedResolutionList = new List<Resolution>();
+
+    [SerializeField]
+    private AudioMixer Mixer;
+    [SerializeField]
+    private AudioSource AudioSource;
+    [SerializeField]    
+    private TextMeshProUGUI ValueText;
 
     public void Start()
     {
@@ -36,6 +45,17 @@ public class OptionSettings : MonoBehaviour
         ResDropDown.AddOptions(resolutionStringList);
     }
 
+    public void OnChangeSlider(float Value)
+    {
+        ValueText.SetText($"{Value.ToString("N4")}");
+
+        //Mixer.SetFloat("Volume", Mathf.Log10(Value) * 20);
+
+        Mixer.SetFloat("Volume", (-80 + Value * 100));
+
+    }
+
+
     public void ChangeResolution()
     {
         SelectdResolution = ResDropDown.value;
@@ -48,5 +68,6 @@ public class OptionSettings : MonoBehaviour
         Screen.SetResolution(SelectedResolutionList[SelectdResolution].width, SelectedResolutionList[SelectdResolution].height, IsFullScreen);
 
     }
+
 }
 

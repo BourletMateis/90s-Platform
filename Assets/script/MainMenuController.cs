@@ -5,16 +5,6 @@ using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
-    public AudioMixer audioMixer;
-    Resolution[] resolution;
-    public Dropdown resolutiondrop;
-
-    public void Start()
-    {
-        resolution = Screen.resolutions;
-        resolutiondrop.ClearOptions();
-    }
-
     public void PlayScene(string sceneName)
     {
         SceneManager.LoadScene("SampleScene");
@@ -28,16 +18,6 @@ public class MainMenuController : MonoBehaviour
     public void returnhome(string sceneName)
     {
         SceneManager.LoadScene("gameMenu");
-    }
-
-    public void SetVolume(float volume)
-    {
-        audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
-    }
-
-    public void FullScreen(bool isFullScreen)
-    {
-        Screen.fullScreen = isFullScreen;
     }
 
     public void QuitGame()
