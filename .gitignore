@@ -116,3 +116,4 @@ src/main/resources/gitignore/*
 src/main/resources/toptal/*
 .idea
 .DS_Store
+.vsconfig
