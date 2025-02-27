@@ -1,20 +1,35 @@
+using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement; // Pour recharger la scène
 
 public class SpikeScript : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.takeDamage(playerHealth.maxHealth);
+    private Animator animator;
 
-            }
+    void Start()
+    {
+        animator = GetComponent<Animator>(); 
+        StartCoroutine(ToggleSpikeEvery10Seconds());  
+    }
+
+    IEnumerator ToggleSpikeEvery10Seconds()
+    {
+        while (true)
+        {
+            ToggleSpikeState(); 
+            yield return new WaitForSeconds(10f); 
         }
     }
+
+  
+    public void ToggleSpikeState()
+    {
+        bool isRetracted = animator.GetBool("isRetracted");  
+        animator.SetBool("isRetracted", !isRetracted);  
+    }
+
+    public bool IsSpikeUp()
+    {
+        bool isSpikeUp = !animator.GetBool("isRetracted");  
+        return isSpikeUp;
+    }
 }
-
-
