@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class winCondition : MonoBehaviour
 {
+    public GameObject WinMenuUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,10 @@ public class winCondition : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Time.timeScale = 0f;
             Debug.Log("gg gros nul");
+            WinMenuUI.SetActive(true);
+
         }
     }
 }
