@@ -23,7 +23,6 @@ public class winCondition : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Time.timeScale = 0f;
-            Debug.Log("gg gros nul");
             WinMenuUI.SetActive(true);
 
         }

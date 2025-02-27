@@ -157,9 +157,6 @@ namespace controlleur
             yield return new WaitForSeconds(dashCooldown);
             canDash = true;
         }
-
-
-
         void Flip(float _velocity)
         {
             if (_velocity > 0.1f)

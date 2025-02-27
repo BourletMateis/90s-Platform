@@ -27,7 +27,7 @@ public class MainMenuController : MonoBehaviour
 
     public void Startgame(string sceneName)
     {
-        SceneManager.LoadScene("clementscene");
+        SceneManager.LoadScene("Level_1");
     }
 
     public void QuitGame()
