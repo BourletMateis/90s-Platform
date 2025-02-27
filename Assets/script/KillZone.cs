@@ -1,7 +1,7 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Pour recharger la scène
+using UnityEngine.SceneManagement;
 
-public class SpikeScript : MonoBehaviour
+public class KillZone : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -10,11 +10,10 @@ public class SpikeScript : MonoBehaviour
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.takeDamage(playerHealth.maxHealth);
-
+                playerHealth.takeDamage(playerHealth.maxHealth); 
             }
         }
     }
+
+
 }
-
-

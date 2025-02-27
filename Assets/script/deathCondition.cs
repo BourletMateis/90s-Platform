@@ -2,14 +2,13 @@ using UnityEngine;
 
 public class deathCondition : MonoBehaviour
 {
-    public GameObject WinMenuUI;
+    public GameObject MenuUI;
 
     void Start()
     {
-        WinMenuUI.SetActive(false);
+        MenuUI.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
     }
@@ -17,7 +16,7 @@ public class deathCondition : MonoBehaviour
     public void ShowDeathMenu()
     {
         Time.timeScale = 0f;
-        WinMenuUI.SetActive(true);
+        MenuUI.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,7 +24,7 @@ public class deathCondition : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Time.timeScale = 0f;
-            WinMenuUI.SetActive(true);
+            MenuUI.SetActive(true);
         }
     }
 }
