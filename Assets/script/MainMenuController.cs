@@ -17,6 +17,7 @@ public class MainMenuController : MonoBehaviour
 
     public void returnhome(string sceneName)
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("gameMenu");
     }
 
@@ -27,7 +28,9 @@ public class MainMenuController : MonoBehaviour
 
     public void Startgame(string sceneName)
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Level_1");
+
     }
 
     public void QuitGame()

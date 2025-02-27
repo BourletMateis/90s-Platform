@@ -235,7 +235,7 @@ MonoBehaviour:
   speed: 7
   jumpForce: 8
   isGrounded: 0
-  groundCheckDistance: 0.5
+  groundCheckDistance: 0.7
   animator: {fileID: 6436215446988253718}
   SpriteRenderer: {fileID: 8670699957732655187}
   doubleJump: 0
@@ -393,6 +393,7 @@ MonoBehaviour:
   graphics: {fileID: 8670699957732655187}
   invincibilityTimeFlash: 0.15
   invincibilityTimeAfterHit: 3
+  deathCondition: {fileID: 0}
 --- !u!70 &8205297619686824897
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
