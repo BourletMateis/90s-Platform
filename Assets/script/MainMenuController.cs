@@ -7,7 +7,7 @@ public class MainMenuController : MonoBehaviour
 {
     public void PlayScene(string sceneName)
     {
-        SceneManager.LoadScene("projet_1_semaine");
+        SceneManager.LoadScene("clementscene");
     }
 
     public void SettingScene(string sceneName)
@@ -27,7 +27,7 @@ public class MainMenuController : MonoBehaviour
 
     public void Startgame(string sceneName)
     {
-        SceneManager.LoadScene("projet_1_semaine");
+        SceneManager.LoadScene("clementscene");
     }
 
     public void QuitGame()
