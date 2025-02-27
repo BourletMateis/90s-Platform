@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/clementscene.unity
     guid: c7837b7eb7dd1734ba5182b310e9cbad
   - enabled: 0
     path: Assets/Scenes/projet_1_semaine.unity
     guid: 4c0b9b588a97a5e4d8857e5f7fb47829
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/settingMenu.unity
     guid: 4356f315d6379084c9d6dba979a50284
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/homePlayer.unity
     guid: cf551e943e502944d8e123a8d1d0c58b
   - enabled: 1
