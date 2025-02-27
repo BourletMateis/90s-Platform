@@ -7,7 +7,7 @@ public class MainMenuController : MonoBehaviour
 {
     public void PlayScene(string sceneName)
     {
-        SceneManager.LoadScene("clementscene");
+        SceneManager.LoadScene("Level_1");
     }
 
     public void SettingScene(string sceneName)

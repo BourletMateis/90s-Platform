@@ -51,6 +51,6 @@ public class CharacterCarousel : MonoBehaviour
     {
         PlayerPrefs.SetInt("SelectedCharacter", currentIndex);
         PlayerPrefs.Save(); 
-        SceneManager.LoadScene("clementscene"); 
+        SceneManager.LoadScene("Level_1"); 
     }
 }
