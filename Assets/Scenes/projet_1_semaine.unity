@@ -51185,7 +51185,7 @@ MonoBehaviour:
   groundCheckDistance: 0.5
   animator: {fileID: 818734092}
   SpriteRenderer: {fileID: 818734098}
-  doubleJump: 0
+  doubleJump: 1
   tr: {fileID: 818734093}
 --- !u!114 &818734097
 MonoBehaviour:
