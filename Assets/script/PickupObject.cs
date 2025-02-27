@@ -1,3 +1,4 @@
+using controlleur;
 using System.Collections;
 using UnityEngine;
 
@@ -24,8 +25,19 @@ public class PickupObject : MonoBehaviour
     {
         yield return new WaitForSeconds(delayBeforeDestroy);
 
+        Vector3 playerPosition = player.transform.position;
+
         Destroy(player);
         Destroy(gameObject);
-        Instantiate(knightPrefab, player.transform.position, Quaternion.identity);
+
+        GameObject knight = Instantiate(knightPrefab, playerPosition, Quaternion.identity);
+
+        Controlleur knightController = knight.GetComponent<Controlleur>();
+
+        if (knightController != null)
+        {
+            knightController.doubleJump = true;
+
+        }
     }
 }

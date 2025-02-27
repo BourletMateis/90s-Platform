@@ -22,7 +22,7 @@ namespace controlleur
         float teleportDistance = 3f;
 
         [SerializeField]
-        bool doubleJump = false;
+        public bool doubleJump = false;
         private int jumpCount = 0;
 
         [SerializeField] private TrailRenderer tr;
@@ -137,12 +137,18 @@ namespace controlleur
 
             Vector3 dashTargetPosition = transform.position + new Vector3(direction * teleportDistance, 0f, 0f);
 
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(direction, 0f), teleportDistance, LayerMask.GetMask("Walls"));
-
-            if (hit.collider != null)
+            RaycastHit2D wallHit = Physics2D.Raycast(transform.position, new Vector2(direction, 0f), teleportDistance, LayerMask.GetMask("Walls"));
+            if (wallHit.collider != null)
             {
-                dashTargetPosition = hit.point; 
+                dashTargetPosition = wallHit.point;
             }
+
+            RaycastHit2D groundHit = Physics2D.Raycast(transform.position, new Vector2(direction, 0f), teleportDistance, LayerMask.GetMask("Ground"));
+            if (groundHit.collider != null)
+            {
+                dashTargetPosition = groundHit.point;
+            }
+
             transform.position = dashTargetPosition;
 
             yield return new WaitForSeconds(0f);
@@ -151,6 +157,7 @@ namespace controlleur
             yield return new WaitForSeconds(dashCooldown);
             canDash = true;
         }
+
 
 
         void Flip(float _velocity)

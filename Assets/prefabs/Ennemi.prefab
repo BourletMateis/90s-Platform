@@ -60,8 +60,8 @@ Transform:
   m_GameObject: {fileID: 2589130655583161863}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.004203081, y: -1.0521102, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalPosition: {x: 0.004203081, y: -0.93211, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2985982493170375450}
@@ -151,7 +151,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.022831425}
+  m_Offset: {x: 0.015328579, y: -0.033902526}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -162,7 +162,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.31, y: 0.40433714}
+  m_Size: {x: 0.3514716, y: 0.38219494}
   m_EdgeRadius: 0
 --- !u!114 &5328654789101342449
 MonoBehaviour:
@@ -181,7 +181,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 6402936745781817224}
   - {fileID: 4295324813337937767}
-  domageOnCollision: 20
+  damageOnCollision: 20
+  weakSpot: {fileID: 3830788451065905208}
 --- !u!95 &7582481684458487379
 Animator:
   serializedVersion: 5
@@ -229,13 +230,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5067810244221420268}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.016132, y: 0.38347, z: 0.023263762}
-  m_LocalScale: {x: 0.316381, y: 0.389392, z: 0.389392}
+  m_LocalRotation: {x: -0, y: 0.028109416, z: -0, w: 0.9996048}
+  m_LocalPosition: {x: -0.009, y: 0.452, z: 0.023263762}
+  m_LocalScale: {x: 0.4386241, y: 0.389392, z: 0.389392}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 949953834358191480}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 3.222, z: 0}
 --- !u!61 &3968220098183313163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -295,6 +296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectDestroy: {fileID: 8037419334748055188}
   animator: {fileID: 7582481684458487379}
+  isPlayerAbove: 0
 --- !u!1 &6266516204246767621
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,7 +353,7 @@ Transform:
   m_GameObject: {fileID: 8037419334748055188}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.1422398, y: -2.2558897, z: 0.058159404}
+  m_LocalPosition: {x: -15.354042, y: -3.76, z: 0.058159404}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

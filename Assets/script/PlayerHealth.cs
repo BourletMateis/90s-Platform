@@ -5,7 +5,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
-    public HealthBar healthBar; // Lien avec la health bar de l'UI
+    public HealthBar healthBar; 
     public bool isInvisible = false;
     public SpriteRenderer graphics;
     public float invincibilityTimeFlash = 0.15f;
@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
         if (!isInvisible)
         {
             currentHealth -= damage;
-            healthBar.SetHealth(currentHealth); // Met à jour la health bar
+            healthBar.SetHealth(currentHealth);
             isInvisible = true;
             StartCoroutine(InvincibilityFlash());
             StartCoroutine(HandleInvincibilityDelay());
@@ -42,9 +42,9 @@ public class PlayerHealth : MonoBehaviour
     {
         while (isInvisible)
         {
-            graphics.color = new Color(1f, 1f, 1f, 0f); // Rendre invisible
+            graphics.color = new Color(1f, 1f, 1f, 0f); 
             yield return new WaitForSeconds(invincibilityTimeFlash);
-            graphics.color = new Color(1f, 1f, 1f, 1f); // Restaurer la visibilité
+            graphics.color = new Color(1f, 1f, 1f, 1f); 
             yield return new WaitForSeconds(invincibilityTimeFlash);
         }
     }
@@ -52,6 +52,6 @@ public class PlayerHealth : MonoBehaviour
     public IEnumerator HandleInvincibilityDelay()
     {
         yield return new WaitForSeconds(invincibilityTimeAfterHit);
-        isInvisible = false; // Réactive le joueur
+        isInvisible = false; 
     }
 }

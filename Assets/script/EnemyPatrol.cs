@@ -10,7 +10,7 @@ public class EnemyPatrol : MonoBehaviour
     private Transform target;
     private int destPoint = 0;
     public int damageOnCollision = 20;
-    public WeakSpot weakSpot; // Référence au weakSpot
+    public WeakSpot weakSpot; 
 
     void Start()
     {
@@ -31,18 +31,15 @@ public class EnemyPatrol : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Vérifie si le joueur est en train de sauter sur le weakspot
         if (collision.transform.CompareTag("Player"))
         {
             PlayerHealth playerHealth = collision.transform.GetComponent<PlayerHealth>();
 
-            // Si le joueur est au-dessus du weakspot, il ne prend pas de dégâts
             if (weakSpot.isPlayerAbove)
             {
-                return; // Bloque l'inflige des dégâts
+                return; 
             }
 
-            // Si le joueur n'est pas au-dessus du weakspot, inflige des dégâts normalement
             playerHealth.takeDamage(damageOnCollision);
         }
     }

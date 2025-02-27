@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class SpikeTrap : MonoBehaviour
 {
-    public float minY = -1.5f;  // Position cachée (sous le sol)
-    public float maxY = 1.0f;   // Position visible (en haut)
+    public float minY = -1.5f;  
+    public float maxY = 1.0f;   
     public float speed = 2.0f;  // Vitesse du mouvement
     public float waitTime = 1.5f; // Temps d'attente en haut et en bas
 
