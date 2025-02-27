@@ -2,14 +2,19 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Roboto-Bold SDF - Drop Shadow
   m_Shader: {fileID: 4800000, guid: fe393ace9b354375a9cb14cdbbc28be4, type: 3}
-  m_ShaderKeywords: OUTLINE_ON UNDERLAY_ON
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - OUTLINE_ON
+  - UNDERLAY_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -33,8 +38,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 28204114720316640, guid: 5302535af1044152a457ed104f1f4b91,
-          type: 2}
+        m_Texture: {fileID: 28204114720316640, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
@@ -68,7 +72,7 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0.1
+    - _OutlineWidth: 0.466
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
     - _ScaleRatioA: 0.9
@@ -100,9 +104,9 @@ Material:
     - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
     - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0.23074007, g: 0.17788847, b: 0.1470273, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
+    - _UnderlayColor: {r: 0.52711535, g: 0.46778384, b: 0.44520125, a: 1}
   m_BuildTextureStacks: []

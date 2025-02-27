@@ -22,7 +22,12 @@ public class MainMenuController : MonoBehaviour
 
     public void playgame(string sceneName)
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("homePlayer");
+    }
+
+    public void Startgame(string sceneName)
+    {
+        SceneManager.LoadScene("projet_1_semaine");
     }
 
     public void QuitGame()
