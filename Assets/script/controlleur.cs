@@ -12,7 +12,7 @@ namespace controlleur
         public float jumpForce = 8f;
         [SerializeField]
         private bool isGrounded;
-        public float groundCheckDistance = 0.7f;
+        public float groundCheckDistance = 0.8f;
         public Animator animator;
         public SpriteRenderer SpriteRenderer;
 
