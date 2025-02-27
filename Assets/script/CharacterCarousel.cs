@@ -1,10 +1,9 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Pour changer de scène
-
+using UnityEngine.SceneManagement;
 public class CharacterCarousel : MonoBehaviour
 {
-    public GameObject[] characters; // Tes personnages
-    public int currentIndex = 0; // L'index du perso sélectionné
+    public GameObject[] characters; 
+    public int currentIndex = 0; 
 
     void Start()
     {
@@ -32,6 +31,12 @@ public class CharacterCarousel : MonoBehaviour
     {
         characters[currentIndex].SetActive(false);
         currentIndex = (currentIndex + 1) % characters.Length;
+
+        PlayerPrefs.SetInt("SelectedCharacter", currentIndex);
+        PlayerPrefs.Save(); 
+
+        Debug.Log("Personnage sélectionné et sauvegardé (next) : " + currentIndex);
+
         ShowCharacter(currentIndex);
     }
 
@@ -39,6 +44,12 @@ public class CharacterCarousel : MonoBehaviour
     {
         characters[currentIndex].SetActive(false);
         currentIndex = (currentIndex - 1 + characters.Length) % characters.Length;
+
+        PlayerPrefs.SetInt("SelectedCharacter", currentIndex);
+        PlayerPrefs.Save(); 
+
+        Debug.Log("Personnage sélectionné et sauvegardé (previous) : " + currentIndex);
+
         ShowCharacter(currentIndex);
     }
 
@@ -49,8 +60,15 @@ public class CharacterCarousel : MonoBehaviour
 
     public void OnPlayButtonClicked()
     {
+        currentIndex = PlayerPrefs.GetInt("SelectedCharacter", 0); 
+
+        Debug.Log("Sauvegarde avant changement de scène : " + currentIndex);
+
         PlayerPrefs.SetInt("SelectedCharacter", currentIndex);
-        PlayerPrefs.Save(); 
-        SceneManager.LoadScene("Level_1"); 
+        PlayerPrefs.Save();
+
+        Debug.Log("Index sauvegardé avant changement de scène : " + PlayerPrefs.GetInt("SelectedCharacter"));
+
+        SceneManager.LoadScene("Level_1");
     }
 }
