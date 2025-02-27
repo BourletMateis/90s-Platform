@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/clementscene.unity
+    guid: c7837b7eb7dd1734ba5182b310e9cbad
+  - enabled: 0
     path: Assets/Scenes/projet_1_semaine.unity
     guid: 4c0b9b588a97a5e4d8857e5f7fb47829
   - enabled: 1
