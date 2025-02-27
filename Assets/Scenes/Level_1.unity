@@ -80262,6 +80262,7 @@ GameObject:
   - component: {fileID: 37017280}
   - component: {fileID: 37017279}
   - component: {fileID: 37017278}
+  - component: {fileID: 37017283}
   m_Layer: 0
   m_Name: long_metal_spike (52)
   m_TagString: Untagged
@@ -80356,7 +80357,7 @@ Animator:
   m_GameObject: {fileID: 37017277}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -80434,6 +80435,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 942765157}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &37017283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37017277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &60987698 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1552729948902742084, guid: 6cd07be9eec3c3d409e7ca80040c5fc4, type: 3}
@@ -80643,7 +80656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 118681966}
   - component: {fileID: 118681965}
-  - component: {fileID: 118681964}
+  - component: {fileID: 118681967}
   m_Layer: 0
   m_Name: DeathZone
   m_TagString: Untagged
@@ -80651,19 +80664,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &118681964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118681963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e00cbf7a9b2490e49b736790105bf9ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MenuUI: {fileID: 1811395009}
 --- !u!61 &118681965
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -80724,6 +80724,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1789905981}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &118681967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118681963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67865937aef6e6448873df994353fa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WinMenuUI: {fileID: 1811395009}
 --- !u!1001 &131136161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80794,6 +80807,7 @@ GameObject:
   - component: {fileID: 143817412}
   - component: {fileID: 143817411}
   - component: {fileID: 143817410}
+  - component: {fileID: 143817414}
   m_Layer: 0
   m_Name: long_metal_spike (46)
   m_TagString: Untagged
@@ -80903,7 +80917,7 @@ Animator:
   m_GameObject: {fileID: 143817408}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -80966,6 +80980,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &143817414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143817408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &158440021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81036,6 +81062,7 @@ GameObject:
   - component: {fileID: 159073539}
   - component: {fileID: 159073538}
   - component: {fileID: 159073537}
+  - component: {fileID: 159073541}
   m_Layer: 0
   m_Name: long_metal_spike (27)
   m_TagString: Untagged
@@ -81145,7 +81172,7 @@ Animator:
   m_GameObject: {fileID: 159073535}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -81208,6 +81235,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &159073541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159073535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &168708683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81345,6 +81384,7 @@ GameObject:
   - component: {fileID: 214772056}
   - component: {fileID: 214772055}
   - component: {fileID: 214772054}
+  - component: {fileID: 214772058}
   m_Layer: 0
   m_Name: long_metal_spike (21)
   m_TagString: Untagged
@@ -81454,7 +81494,7 @@ Animator:
   m_GameObject: {fileID: 214772052}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -81517,6 +81557,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &214772058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214772052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &220698830
 GameObject:
   m_ObjectHideFlags: 0
@@ -81530,6 +81582,7 @@ GameObject:
   - component: {fileID: 220698834}
   - component: {fileID: 220698833}
   - component: {fileID: 220698832}
+  - component: {fileID: 220698836}
   m_Layer: 0
   m_Name: long_metal_spike (26)
   m_TagString: Untagged
@@ -81639,7 +81692,7 @@ Animator:
   m_GameObject: {fileID: 220698830}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -81702,6 +81755,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &220698836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220698830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &221346280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82710,6 +82775,7 @@ GameObject:
   - component: {fileID: 384417576}
   - component: {fileID: 384417575}
   - component: {fileID: 384417574}
+  - component: {fileID: 384417578}
   m_Layer: 0
   m_Name: long_metal_spike (45)
   m_TagString: Untagged
@@ -82819,7 +82885,7 @@ Animator:
   m_GameObject: {fileID: 384417572}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -82882,6 +82948,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &384417578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384417572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &385642310
 GameObject:
   m_ObjectHideFlags: 0
@@ -83395,6 +83473,7 @@ GameObject:
   - component: {fileID: 434207923}
   - component: {fileID: 434207922}
   - component: {fileID: 434207921}
+  - component: {fileID: 434207925}
   m_Layer: 0
   m_Name: long_metal_spike (28)
   m_TagString: Untagged
@@ -83504,7 +83583,7 @@ Animator:
   m_GameObject: {fileID: 434207919}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -83567,6 +83646,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &434207925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434207919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &434462790
 GameObject:
   m_ObjectHideFlags: 0
@@ -83777,6 +83868,7 @@ GameObject:
   - component: {fileID: 449466783}
   - component: {fileID: 449466782}
   - component: {fileID: 449466781}
+  - component: {fileID: 449466785}
   m_Layer: 0
   m_Name: long_metal_spike (36)
   m_TagString: Untagged
@@ -83886,7 +83978,7 @@ Animator:
   m_GameObject: {fileID: 449466779}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -83949,6 +84041,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &449466785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449466779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &465081686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84219,6 +84323,7 @@ GameObject:
   - component: {fileID: 485366950}
   - component: {fileID: 485366949}
   - component: {fileID: 485366948}
+  - component: {fileID: 485366952}
   m_Layer: 0
   m_Name: long_metal_spike (47)
   m_TagString: Untagged
@@ -84328,7 +84433,7 @@ Animator:
   m_GameObject: {fileID: 485366946}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -84391,38 +84496,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &502065092
-GameObject:
+--- !u!114 &485366952
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 502065093}
-  m_Layer: 0
-  m_Name: backgroundOBj
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &502065093
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 502065092}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -396.34784, y: 3.646282, z: -4.3055563}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 807924195}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 485366946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &508543535 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7033586667510231354, guid: 82065c8077aff2e428b515e0c2fe8fdf, type: 3}
@@ -84441,6 +84526,7 @@ GameObject:
   - component: {fileID: 509295160}
   - component: {fileID: 509295159}
   - component: {fileID: 509295158}
+  - component: {fileID: 509295162}
   m_Layer: 0
   m_Name: long_metal_spike (19)
   m_TagString: Untagged
@@ -84550,7 +84636,7 @@ Animator:
   m_GameObject: {fileID: 509295156}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -84613,6 +84699,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &509295162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509295156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &521343143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84754,6 +84852,7 @@ GameObject:
   - component: {fileID: 528792362}
   - component: {fileID: 528792361}
   - component: {fileID: 528792360}
+  - component: {fileID: 528792364}
   m_Layer: 0
   m_Name: long_metal_spike (22)
   m_TagString: Untagged
@@ -84863,7 +84962,7 @@ Animator:
   m_GameObject: {fileID: 528792358}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -84926,6 +85025,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &528792364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528792358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &533611695 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7033586667510231354, guid: 82065c8077aff2e428b515e0c2fe8fdf, type: 3}
@@ -85129,6 +85240,7 @@ GameObject:
   - component: {fileID: 559258913}
   - component: {fileID: 559258912}
   - component: {fileID: 559258911}
+  - component: {fileID: 559258915}
   m_Layer: 0
   m_Name: long_metal_spike (15)
   m_TagString: Untagged
@@ -85238,7 +85350,7 @@ Animator:
   m_GameObject: {fileID: 559258909}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -85301,6 +85413,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &559258915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559258909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &564111498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85507,6 +85631,7 @@ GameObject:
   - component: {fileID: 571212146}
   - component: {fileID: 571212145}
   - component: {fileID: 571212144}
+  - component: {fileID: 571212148}
   m_Layer: 0
   m_Name: long_metal_spike (14)
   m_TagString: Untagged
@@ -85616,7 +85741,7 @@ Animator:
   m_GameObject: {fileID: 571212142}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -85679,6 +85804,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &571212148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571212142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &580286114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86330,6 +86467,7 @@ GameObject:
   - component: {fileID: 649322957}
   - component: {fileID: 649322956}
   - component: {fileID: 649322955}
+  - component: {fileID: 649322959}
   m_Layer: 0
   m_Name: long_metal_spike (16)
   m_TagString: Untagged
@@ -86439,7 +86577,7 @@ Animator:
   m_GameObject: {fileID: 649322953}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -86502,6 +86640,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &649322959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649322953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &661333989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1552729948902742084, guid: 6cd07be9eec3c3d409e7ca80040c5fc4, type: 3}
@@ -86691,6 +86841,7 @@ GameObject:
   - component: {fileID: 673131040}
   - component: {fileID: 673131039}
   - component: {fileID: 673131038}
+  - component: {fileID: 673131042}
   m_Layer: 0
   m_Name: long_metal_spike (41)
   m_TagString: Untagged
@@ -86800,7 +86951,7 @@ Animator:
   m_GameObject: {fileID: 673131036}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -86863,6 +87014,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &673131042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673131036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &682428682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86938,6 +87101,7 @@ GameObject:
   - component: {fileID: 694282051}
   - component: {fileID: 694282050}
   - component: {fileID: 694282049}
+  - component: {fileID: 694282053}
   m_Layer: 0
   m_Name: long_metal_spike (32)
   m_TagString: Untagged
@@ -87047,7 +87211,7 @@ Animator:
   m_GameObject: {fileID: 694282047}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -87110,6 +87274,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &694282053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694282047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &696953719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87337,7 +87513,7 @@ Transform:
   m_GameObject: {fileID: 771840956}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.6561832, y: -3.9888976, z: 0.050821718}
+  m_LocalPosition: {x: 499.75, y: -20.41, z: 0.050821718}
   m_LocalScale: {x: 0.6732495, y: 0.69948, z: 0.69948}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87475,6 +87651,7 @@ GameObject:
   - component: {fileID: 793763711}
   - component: {fileID: 793763710}
   - component: {fileID: 793763709}
+  - component: {fileID: 793763713}
   m_Layer: 0
   m_Name: long_metal_spike (48)
   m_TagString: Untagged
@@ -87584,7 +87761,7 @@ Animator:
   m_GameObject: {fileID: 793763707}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -87647,6 +87824,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &793763713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793763707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &800546427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88211,6 +88400,7 @@ GameObject:
   - component: {fileID: 868225449}
   - component: {fileID: 868225448}
   - component: {fileID: 868225447}
+  - component: {fileID: 868225451}
   m_Layer: 0
   m_Name: long_metal_spike (38)
   m_TagString: Untagged
@@ -88320,7 +88510,7 @@ Animator:
   m_GameObject: {fileID: 868225445}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -88383,6 +88573,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &868225451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868225445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &868719549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88628,6 +88830,7 @@ GameObject:
   - component: {fileID: 922181342}
   - component: {fileID: 922181341}
   - component: {fileID: 922181340}
+  - component: {fileID: 922181344}
   m_Layer: 0
   m_Name: long_metal_spike (33)
   m_TagString: Untagged
@@ -88737,7 +88940,7 @@ Animator:
   m_GameObject: {fileID: 922181338}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -88800,6 +89003,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &922181344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922181338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &934119071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89720,6 +89935,7 @@ GameObject:
   - component: {fileID: 1025319407}
   - component: {fileID: 1025319406}
   - component: {fileID: 1025319405}
+  - component: {fileID: 1025319409}
   m_Layer: 0
   m_Name: long_metal_spike (23)
   m_TagString: Untagged
@@ -89829,7 +90045,7 @@ Animator:
   m_GameObject: {fileID: 1025319403}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -89892,6 +90108,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1025319409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025319403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1034661292
 GameObject:
   m_ObjectHideFlags: 0
@@ -89905,6 +90133,7 @@ GameObject:
   - component: {fileID: 1034661296}
   - component: {fileID: 1034661295}
   - component: {fileID: 1034661294}
+  - component: {fileID: 1034661298}
   m_Layer: 0
   m_Name: long_metal_spike (18)
   m_TagString: Untagged
@@ -90014,7 +90243,7 @@ Animator:
   m_GameObject: {fileID: 1034661292}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -90077,6 +90306,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1034661298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034661292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1040555433 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7033586667510231354, guid: 82065c8077aff2e428b515e0c2fe8fdf, type: 3}
@@ -90095,6 +90336,7 @@ GameObject:
   - component: {fileID: 1041921835}
   - component: {fileID: 1041921834}
   - component: {fileID: 1041921833}
+  - component: {fileID: 1041921837}
   m_Layer: 0
   m_Name: long_metal_spike (43)
   m_TagString: Untagged
@@ -90204,7 +90446,7 @@ Animator:
   m_GameObject: {fileID: 1041921831}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -90267,6 +90509,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1041921837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041921831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1043927678 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1552729948902742084, guid: 6cd07be9eec3c3d409e7ca80040c5fc4, type: 3}
@@ -90895,6 +91149,7 @@ GameObject:
   - component: {fileID: 1184227966}
   - component: {fileID: 1184227965}
   - component: {fileID: 1184227964}
+  - component: {fileID: 1184227968}
   m_Layer: 0
   m_Name: long_metal_spike (24)
   m_TagString: Untagged
@@ -91004,7 +91259,7 @@ Animator:
   m_GameObject: {fileID: 1184227962}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -91067,6 +91322,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1184227968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184227962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1193491432 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7033586667510231354, guid: 82065c8077aff2e428b515e0c2fe8fdf, type: 3}
@@ -91429,6 +91696,7 @@ GameObject:
   - component: {fileID: 1258359882}
   - component: {fileID: 1258359881}
   - component: {fileID: 1258359880}
+  - component: {fileID: 1258359884}
   m_Layer: 0
   m_Name: long_metal_spike (52)
   m_TagString: Untagged
@@ -91538,7 +91806,7 @@ Animator:
   m_GameObject: {fileID: 1258359878}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -91601,6 +91869,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1258359884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258359878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1264824679
 GameObject:
   m_ObjectHideFlags: 0
@@ -91614,6 +91894,7 @@ GameObject:
   - component: {fileID: 1264824683}
   - component: {fileID: 1264824682}
   - component: {fileID: 1264824681}
+  - component: {fileID: 1264824685}
   m_Layer: 0
   m_Name: long_metal_spike (13)
   m_TagString: Untagged
@@ -91723,7 +92004,7 @@ Animator:
   m_GameObject: {fileID: 1264824679}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -91786,6 +92067,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1264824685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264824679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1265420725 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1552729948902742084, guid: 6cd07be9eec3c3d409e7ca80040c5fc4, type: 3}
@@ -92000,6 +92293,7 @@ GameObject:
   - component: {fileID: 1292756684}
   - component: {fileID: 1292756683}
   - component: {fileID: 1292756682}
+  - component: {fileID: 1292756686}
   m_Layer: 0
   m_Name: long_metal_spike (12)
   m_TagString: Untagged
@@ -92109,7 +92403,7 @@ Animator:
   m_GameObject: {fileID: 1292756680}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -92172,6 +92466,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1292756686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292756680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1300231536
 GameObject:
   m_ObjectHideFlags: 0
@@ -92305,6 +92611,7 @@ GameObject:
   - component: {fileID: 1340211072}
   - component: {fileID: 1340211071}
   - component: {fileID: 1340211070}
+  - component: {fileID: 1340211074}
   m_Layer: 0
   m_Name: long_metal_spike (31)
   m_TagString: Untagged
@@ -92414,7 +92721,7 @@ Animator:
   m_GameObject: {fileID: 1340211068}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -92477,6 +92784,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1340211074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340211068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1346293235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7033586667510231354, guid: 82065c8077aff2e428b515e0c2fe8fdf, type: 3}
@@ -92609,6 +92928,7 @@ GameObject:
   - component: {fileID: 1401555471}
   - component: {fileID: 1401555470}
   - component: {fileID: 1401555469}
+  - component: {fileID: 1401555473}
   m_Layer: 0
   m_Name: long_metal_spike (25)
   m_TagString: Untagged
@@ -92718,7 +93038,7 @@ Animator:
   m_GameObject: {fileID: 1401555467}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -92781,6 +93101,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1401555473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401555467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1409558346 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7033586667510231354, guid: 82065c8077aff2e428b515e0c2fe8fdf, type: 3}
@@ -93094,6 +93426,7 @@ GameObject:
   - component: {fileID: 1481226364}
   - component: {fileID: 1481226363}
   - component: {fileID: 1481226362}
+  - component: {fileID: 1481226366}
   m_Layer: 0
   m_Name: long_metal_spike (20)
   m_TagString: Untagged
@@ -93203,7 +93536,7 @@ Animator:
   m_GameObject: {fileID: 1481226360}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -93266,6 +93599,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1481226366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481226360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1483941841
 GameObject:
   m_ObjectHideFlags: 0
@@ -93461,6 +93806,7 @@ GameObject:
   - component: {fileID: 1501769019}
   - component: {fileID: 1501769018}
   - component: {fileID: 1501769017}
+  - component: {fileID: 1501769021}
   m_Layer: 0
   m_Name: long_metal_spike (50)
   m_TagString: Untagged
@@ -93570,7 +93916,7 @@ Animator:
   m_GameObject: {fileID: 1501769015}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -93633,6 +93979,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1501769021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501769015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1503873437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93760,6 +94118,7 @@ GameObject:
   - component: {fileID: 1514219681}
   - component: {fileID: 1514219680}
   - component: {fileID: 1514219679}
+  - component: {fileID: 1514219683}
   m_Layer: 0
   m_Name: long_metal_spike (49)
   m_TagString: Untagged
@@ -93869,7 +94228,7 @@ Animator:
   m_GameObject: {fileID: 1514219677}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -93932,6 +94291,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1514219683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514219677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1519411114
 GameObject:
   m_ObjectHideFlags: 0
@@ -93945,6 +94316,7 @@ GameObject:
   - component: {fileID: 1519411118}
   - component: {fileID: 1519411117}
   - component: {fileID: 1519411116}
+  - component: {fileID: 1519411120}
   m_Layer: 0
   m_Name: long_metal_spike (37)
   m_TagString: Untagged
@@ -94054,7 +94426,7 @@ Animator:
   m_GameObject: {fileID: 1519411114}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -94117,6 +94489,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1519411120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519411114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1522097999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94990,6 +95374,7 @@ GameObject:
   - component: {fileID: 1722751323}
   - component: {fileID: 1722751322}
   - component: {fileID: 1722751321}
+  - component: {fileID: 1722751325}
   m_Layer: 0
   m_Name: long_metal_spike (39)
   m_TagString: Untagged
@@ -95099,7 +95484,7 @@ Animator:
   m_GameObject: {fileID: 1722751319}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -95162,6 +95547,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1722751325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722751319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1729290564
 GameObject:
   m_ObjectHideFlags: 0
@@ -95175,6 +95572,7 @@ GameObject:
   - component: {fileID: 1729290568}
   - component: {fileID: 1729290567}
   - component: {fileID: 1729290566}
+  - component: {fileID: 1729290570}
   m_Layer: 0
   m_Name: long_metal_spike (34)
   m_TagString: Untagged
@@ -95284,7 +95682,7 @@ Animator:
   m_GameObject: {fileID: 1729290564}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -95347,6 +95745,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1729290570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729290564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1753974886
 GameObject:
   m_ObjectHideFlags: 0
@@ -95360,6 +95770,7 @@ GameObject:
   - component: {fileID: 1753974890}
   - component: {fileID: 1753974889}
   - component: {fileID: 1753974888}
+  - component: {fileID: 1753974892}
   m_Layer: 0
   m_Name: long_metal_spike (35)
   m_TagString: Untagged
@@ -95469,7 +95880,7 @@ Animator:
   m_GameObject: {fileID: 1753974886}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -95532,6 +95943,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1753974892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753974886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1768804747
 GameObject:
   m_ObjectHideFlags: 0
@@ -95545,6 +95968,7 @@ GameObject:
   - component: {fileID: 1768804751}
   - component: {fileID: 1768804750}
   - component: {fileID: 1768804749}
+  - component: {fileID: 1768804753}
   m_Layer: 0
   m_Name: long_metal_spike (17)
   m_TagString: Untagged
@@ -95654,7 +96078,7 @@ Animator:
   m_GameObject: {fileID: 1768804747}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -95717,6 +96141,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1768804753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768804747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1769754487
 GameObject:
   m_ObjectHideFlags: 0
@@ -95881,6 +96317,7 @@ GameObject:
   - component: {fileID: 1780648779}
   - component: {fileID: 1780648778}
   - component: {fileID: 1780648777}
+  - component: {fileID: 1780648781}
   m_Layer: 0
   m_Name: long_metal_spike (40)
   m_TagString: Untagged
@@ -95990,7 +96427,7 @@ Animator:
   m_GameObject: {fileID: 1780648775}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -96053,6 +96490,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1780648781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780648775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1789905980
 GameObject:
   m_ObjectHideFlags: 0
@@ -96736,6 +97185,7 @@ GameObject:
   - component: {fileID: 1927789679}
   - component: {fileID: 1927789678}
   - component: {fileID: 1927789677}
+  - component: {fileID: 1927789681}
   m_Layer: 0
   m_Name: long_metal_spike (11)
   m_TagString: Untagged
@@ -96845,7 +97295,7 @@ Animator:
   m_GameObject: {fileID: 1927789675}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -96908,6 +97358,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1927789681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927789675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1932405939
 GameObject:
   m_ObjectHideFlags: 0
@@ -97514,6 +97976,7 @@ GameObject:
   - component: {fileID: 1958448140}
   - component: {fileID: 1958448139}
   - component: {fileID: 1958448138}
+  - component: {fileID: 1958448142}
   m_Layer: 0
   m_Name: long_metal_spike (29)
   m_TagString: Untagged
@@ -97623,7 +98086,7 @@ Animator:
   m_GameObject: {fileID: 1958448136}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -97686,6 +98149,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1958448142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958448136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1963742747 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1552729948902742084, guid: 6cd07be9eec3c3d409e7ca80040c5fc4, type: 3}
@@ -97714,6 +98189,7 @@ GameObject:
   - component: {fileID: 1981067258}
   - component: {fileID: 1981067257}
   - component: {fileID: 1981067256}
+  - component: {fileID: 1981067260}
   m_Layer: 0
   m_Name: long_metal_spike (42)
   m_TagString: Untagged
@@ -97823,7 +98299,7 @@ Animator:
   m_GameObject: {fileID: 1981067254}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -97886,6 +98362,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1981067260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981067254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1991927653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7033586667510231354, guid: 82065c8077aff2e428b515e0c2fe8fdf, type: 3}
@@ -98142,6 +98630,7 @@ GameObject:
   - component: {fileID: 2030008265}
   - component: {fileID: 2030008264}
   - component: {fileID: 2030008263}
+  - component: {fileID: 2030008267}
   m_Layer: 0
   m_Name: long_metal_spike (30)
   m_TagString: Untagged
@@ -98251,7 +98740,7 @@ Animator:
   m_GameObject: {fileID: 2030008261}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -98314,6 +98803,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2030008267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030008261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2041439218 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1552729948902742084, guid: 6cd07be9eec3c3d409e7ca80040c5fc4, type: 3}
@@ -98375,6 +98876,7 @@ GameObject:
   - component: {fileID: 2066174357}
   - component: {fileID: 2066174356}
   - component: {fileID: 2066174355}
+  - component: {fileID: 2066174359}
   m_Layer: 0
   m_Name: long_metal_spike (44)
   m_TagString: Untagged
@@ -98484,7 +98986,7 @@ Animator:
   m_GameObject: {fileID: 2066174353}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -98547,6 +99049,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2066174359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066174353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2070949932
 GameObject:
   m_ObjectHideFlags: 0
@@ -98557,9 +99071,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2070949937}
   - component: {fileID: 2070949936}
-  - component: {fileID: 2070949935}
   - component: {fileID: 2070949934}
   - component: {fileID: 2070949933}
+  - component: {fileID: 2070949938}
+  - component: {fileID: 2070949939}
   m_Layer: 0
   m_Name: long_metal_spike (53)
   m_TagString: Untagged
@@ -98644,27 +99159,6 @@ PolygonCollider2D:
       - {x: 0.34, y: -0.525}
       - {x: 0.34, y: -0.415}
   m_UseDelaunayMesh: 0
---- !u!95 &2070949935
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070949932}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &2070949936
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -98732,6 +99226,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 942765157}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2070949938
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070949932}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2070949939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070949932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2079815623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99158,6 +99685,7 @@ GameObject:
   - component: {fileID: 2138924540}
   - component: {fileID: 2138924539}
   - component: {fileID: 2138924538}
+  - component: {fileID: 2138924542}
   m_Layer: 0
   m_Name: long_metal_spike (51)
   m_TagString: Untagged
@@ -99267,7 +99795,7 @@ Animator:
   m_GameObject: {fileID: 2138924536}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -99330,6 +99858,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2138924542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138924536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2139974332
 GameObject:
   m_ObjectHideFlags: 0
@@ -99343,6 +99883,7 @@ GameObject:
   - component: {fileID: 2139974335}
   - component: {fileID: 2139974334}
   - component: {fileID: 2139974333}
+  - component: {fileID: 2139974338}
   m_Layer: 0
   m_Name: long_metal_spike (51)
   m_TagString: Untagged
@@ -99437,7 +99978,7 @@ Animator:
   m_GameObject: {fileID: 2139974332}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a011ea3e290408aa3fcf4609ce74b4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 67b2c7d77f89e254daad2d61e3cab46b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -99515,6 +100056,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 942765157}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2139974338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139974332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55950697bc5474a0eaa67755d2caa9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

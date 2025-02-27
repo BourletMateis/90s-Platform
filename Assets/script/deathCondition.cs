@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class deathCondition : MonoBehaviour
 {
@@ -21,10 +21,25 @@ public class deathCondition : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            Time.timeScale = 0f;
-            MenuUI.SetActive(true);
+            SpikeScript spike = GetComponent<SpikeScript>();
+
+            if (spike != null)
+            {
+                if (spike.IsSpikeUp())
+                {
+                    ShowDeathMenu();
+                }
+                else
+                {
+                }
+            }
+            else
+            {
+                Debug.LogError("Aucun SpikeScript trouvé !");
+            }
         }
     }
+
 }
