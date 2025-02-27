@@ -1,13 +1,11 @@
-using System;
-using System.Diagnostics;
+using controlleur;
 using UnityEngine;
-using System.Collections;
-using controlleur; 
 
 public class WeakSpot : MonoBehaviour
 {
     public GameObject objectDestroy;
     public Animator animator;
+    public bool isPlayerAbove = false; 
 
     void Start()
     {
@@ -18,6 +16,8 @@ public class WeakSpot : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+           
+            isPlayerAbove = true;
             animator.SetFloat("Health", 0);
 
             if (GetComponent<Controlleur>() != null)
@@ -25,7 +25,14 @@ public class WeakSpot : MonoBehaviour
 
             if (GetComponent<Rigidbody2D>() != null)
                 GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        }
+    }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            isPlayerAbove = false;
         }
     }
 

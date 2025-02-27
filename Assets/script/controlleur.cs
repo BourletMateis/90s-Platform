@@ -125,6 +125,7 @@ namespace controlleur
             canDash = false;
             isDashing = true;
             float direction;
+
             if (Input.GetKey(KeyCode.D))
                 direction = 1f;
             else if (Input.GetKey(KeyCode.Q))
@@ -133,8 +134,16 @@ namespace controlleur
                 direction = transform.localScale.x > 0 ? 1f : -1f;
 
             tr.emitting = true;
-            Vector3 newPosition = transform.position + new Vector3(direction * teleportDistance, 0f, 0f);
-            transform.position = newPosition;
+
+            Vector3 dashTargetPosition = transform.position + new Vector3(direction * teleportDistance, 0f, 0f);
+
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(direction, 0f), teleportDistance, LayerMask.GetMask("Walls"));
+
+            if (hit.collider != null)
+            {
+                dashTargetPosition = hit.point; 
+            }
+            transform.position = dashTargetPosition;
 
             yield return new WaitForSeconds(0f);
             tr.emitting = false;
@@ -142,6 +151,7 @@ namespace controlleur
             yield return new WaitForSeconds(dashCooldown);
             canDash = true;
         }
+
 
         void Flip(float _velocity)
         {
