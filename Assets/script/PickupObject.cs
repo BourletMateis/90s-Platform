@@ -23,7 +23,7 @@ public class PickupObject : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && gameObject.CompareTag("Heal"))
         {
             PlayerHealth playerHealth = collision.transform.GetComponent<PlayerHealth>();
-            playerHealth.heal(50);
+            playerHealth.heal();
             Destroy(gameObject);
         }
     }

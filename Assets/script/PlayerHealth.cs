@@ -73,9 +73,11 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(invincibilityTimeAfterHit);
         isInvisible = false;
     }
-    public void heal(int heal)
-    {
-        currentHealth += heal;
+    public void heal()
+    { 
+
+        int heal = maxHealth - currentHealth;
+        currentHealth = currentHealth + heal;
         healthBar.SetHealth(currentHealth);
     }
 }
