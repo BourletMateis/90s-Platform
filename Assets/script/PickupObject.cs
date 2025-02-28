@@ -19,6 +19,13 @@ public class PickupObject : MonoBehaviour
         {
             StartCoroutine(DestroyPlayerAndSpawnKnight(collision.gameObject));
         }
+
+        if (collision.gameObject.CompareTag("Player") && gameObject.CompareTag("Heal"))
+        {
+            PlayerHealth playerHealth = collision.transform.GetComponent<PlayerHealth>();
+            playerHealth.heal(50);
+            Destroy(gameObject);
+        }
     }
 
     private IEnumerator DestroyPlayerAndSpawnKnight(GameObject player)

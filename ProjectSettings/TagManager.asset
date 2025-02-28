@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - Armor
   - Coins
+  - Heal
   layers:
   - Default
   - TransparentFX

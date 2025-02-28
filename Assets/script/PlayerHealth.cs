@@ -14,6 +14,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1f;
         if (healthBar == null)
         {
             healthBar = FindObjectOfType<HealthBar>();
@@ -31,8 +32,10 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
+
         if (currentHealth <= 0)
         {
+            Time.timeScale = 0f;
             deathCondition.ShowDeathMenu();
         }
     }
@@ -69,5 +72,10 @@ public class PlayerHealth : MonoBehaviour
     {
         yield return new WaitForSeconds(invincibilityTimeAfterHit);
         isInvisible = false;
+    }
+    public void heal(int heal)
+    {
+        currentHealth += heal;
+        healthBar.SetHealth(currentHealth);
     }
 }

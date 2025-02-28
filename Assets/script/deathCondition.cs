@@ -6,6 +6,7 @@ public class deathCondition : MonoBehaviour
 
     void Start()
     {
+
         MenuUI.SetActive(false);
     }
 
@@ -15,7 +16,6 @@ public class deathCondition : MonoBehaviour
 
     public void ShowDeathMenu()
     {
-        Time.timeScale = 0f;
         MenuUI.SetActive(true);
     }
 
@@ -29,6 +29,7 @@ public class deathCondition : MonoBehaviour
             {
                 if (spike.IsSpikeUp())
                 {
+                    Time.timeScale = 0f;
                     ShowDeathMenu();
                 }
                 else
